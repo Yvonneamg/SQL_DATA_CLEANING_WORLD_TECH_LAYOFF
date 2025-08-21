@@ -12,3 +12,4 @@ This repository uses My SQL to clean Kaggle's world layoff dataset
 - Create a new schema
 - Import the file from tables, `Table Data Import Wizard`. Import the csv file as it is.
 - Create a staging table to preserve the initial table data as it is.
+  - Step 1: Remove Duplicates if any: Using CTEs(Common Table Expressions) and windows functions, identify duplicates and remove them.
