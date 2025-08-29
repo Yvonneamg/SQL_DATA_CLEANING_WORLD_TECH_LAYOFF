@@ -15,3 +15,4 @@ This repository uses My SQL to clean Kaggle's world layoff dataset
   - **Step 1: Remove Duplicates if any:** Using CTEs(Common Table Expressions) and windows functions like `rownum()`, identify duplicates and remove them.
   - **Step 2: Standardize the dataset** by removing any beginning or trailing spaces, ensure consitency of names, deal with any multiple versions of any data using `update`,`set`,`where`,`trim` among others, ensure the date is in the correct format use `str_to_date`.
   - **Step 3: Handle null and blank values:** Using `update`, `Joins`, `is null`,`is not null` to update any nulls and blank spaces.
+  - **Step 4:Delete any unnecessary rows and columns:** In this dataset, I deleted all entries that had total_paid_off and percentage paid off as blank. I also dropped some columns date added, Source. This can be achieved using `Alter`,`Drop` and `Delete`
