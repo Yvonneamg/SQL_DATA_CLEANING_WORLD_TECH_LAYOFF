@@ -18,4 +18,4 @@ This repository uses My SQL to clean Kaggle's world layoff dataset
   - **Step 4:Delete any unnecessary rows and columns:** In this dataset, I deleted all entries that had total_paid_off and percentage paid off as blank. I also dropped some columns date added, Source. This can be achieved using `Alter`,`Drop` and `Delete`
 
 # HOW TO RUN
-- Run the [Data Cleaning Sql Script](Data_Cleaning Full Script.sql)on `MYSQL WORKBENCH`
+- Run the [Data Cleaning Sql Script](Data_Cleaning%20Full%20Script.sql)on `MYSQL WORKBENCH`
