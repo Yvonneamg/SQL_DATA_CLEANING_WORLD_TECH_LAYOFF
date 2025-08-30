@@ -111,6 +111,11 @@ where total_laid_off is null or total_laid_off='';
 alter table layoff_staging2
 modify column total_laid_off int;
 
+-- Modify funds raised column to the correct format
+update layoff_staging2
+set funds_raised=0
+where funds_raised is null or funds_raised='';
+
 -- Drop the date_added column as it is not useful
 alter table layoff_staging2
 drop column date_added;
