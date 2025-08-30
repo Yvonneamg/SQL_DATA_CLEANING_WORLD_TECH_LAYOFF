@@ -103,6 +103,14 @@ set `date`=str_to_date(`date`,'%m/%d/%Y');
 update layoff_staging2
 set `date`=str_to_date(`date`,'%m/%d/%Y');
 
+-- Update the total_laid_off to the correct format
+update layoff_staging2
+set total_laid_off=0
+where total_laid_off is null or total_laid_off='';
+
+alter table layoff_staging2
+modify column total_laid_off int;
+
 -- Drop the date_added column as it is not useful
 alter table layoff_staging2
 drop column date_added;
